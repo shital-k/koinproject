@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
     private fun callViewModel() {
         viewModel.list?.observe(this@MainActivity, Observer {
             it?.let { list ->
+
                 if (list.isNotEmpty()) {
                     print("list of topic : ${list.size}")
 

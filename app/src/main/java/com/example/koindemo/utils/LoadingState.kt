@@ -13,3 +13,8 @@ sealed class NetworkResult<T>(
 
 }
 
+enum class Response {
+    SUCCESS,
+    ERROR,
+    LOADING
+}
